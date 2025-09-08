@@ -2,6 +2,7 @@
 # Anistream
 
 Anistream est une application web de gestion et découverte d’animes, développée avec React, Vite, Tailwind CSS et Dexie (IndexedDB) pour le stockage local.
+Elle s'appuie sur l’API AniList pour fournir des données précises et à jour sur les animes.
 
 ## Fonctionnalités principales
 
@@ -19,6 +20,7 @@ Anistream est une application web de gestion et découverte d’animes, dévelop
 - Vite
 - Tailwind CSS
 - Dexie (IndexedDB)
+- 🔗 AniList API
 
 ## Installation
 
