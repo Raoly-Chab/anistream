@@ -1,0 +1,149 @@
+/* Container général */
+.home-container {
+  min-height: 100vh;
+  width: 100%;
+  padding: 2.5rem;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  background: linear-gradient(to bottom, #000000, #1f1f2e, #2a2a3a);
+}
+
+/* Loading / error */
+.loading-text, .error-text {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #f59e0b;
+  animation: pulse 1.5s infinite;
+}
+
+.error-text { color: #ef4444; }
+
+/* Hero / Carrousel */
+.home-hero {
+  margin-bottom: 3rem;
+}
+.home-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #f97316;
+  text-shadow: 2px 2px 8px #000;
+  margin-bottom: 0.5rem;
+}
+.home-subtitle {
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 1.5rem;
+  font-size: 1.125rem;
+}
+.no-anime-text {
+  text-align: center;
+  color: rgba(255,255,255,0.6);
+}
+
+/* Sections par genre */
+.home-category-section {
+  margin-bottom: 3rem;
+}
+.home-category-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #f97316;
+  border-bottom: 2px solid #f97316;
+  display: inline-block;
+  padding-bottom: 0.25rem;
+  margin-bottom: 1rem;
+}
+.home-category-list {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+.home-category-list::-webkit-scrollbar {
+  height: 6px;
+}
+.home-category-list::-webkit-scrollbar-thumb {
+  background-color: #f97316;
+  border-radius: 3px;
+}
+.home-category-list::-webkit-scrollbar-track {
+  background-color: #2a2a3a;
+  border-radius: 3px;
+}
+
+/* Cartes d'anime */
+.anime-card {
+  min-width: 140px;
+  flex-shrink: 0;
+  cursor: pointer;
+  background: rgba(31, 31, 46, 0.75);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(249,115,22,0.3);
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.anime-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(249,115,22,0.5);
+}
+
+.anime-image {
+  width: 100%;
+  height: 144px;
+  object-fit: cover;
+  border-radius: 0.375rem;
+  margin-bottom: 0.25rem;
+  transition: brightness 0.3s;
+}
+.anime-image:hover { filter: brightness(1.1); }
+
+.anime-title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 0.25rem;
+}
+
+.anime-score {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #facc15;
+  margin-bottom: 0.25rem;
+}
+
+/* Boutons */
+.anime-actions {
+  display: flex;
+  gap: 0.25rem;
+}
+.btn-add, .btn-watch {
+  flex: 1;
+  padding: 0.25rem 0;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 0.25rem;
+  transition: all 0.2s;
+}
+.btn-add {
+  background-color: #f97316;
+  color: white;
+}
+.btn-add:hover { background-color: #ea580c; }
+.btn-watch {
+  background-color: white;
+  color: black;
+}
+.btn-watch:hover { background-color: #e5e7eb; }
+
+/* Animation pulse */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}

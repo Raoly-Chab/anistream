@@ -1,0 +1,29 @@
+/* Navbar.css */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #1a1a2e; /* fond sombre */
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+nav img {
+  height: 40px;
+}
+
+nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #f72585; /* couleur au survol */
+}
+
+nav a.active {
+  color: #4cc9f0; /* couleur du lien actif */
+}

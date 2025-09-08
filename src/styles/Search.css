@@ -1,0 +1,84 @@
+/* Search.css */
+
+.home-bg {
+  background: linear-gradient(to bottom, #1a1333, #23235b, #2d1a3a);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 3rem 0;
+  animation: fade-in 1s ease forwards;
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(15px); /* Safari */
+  backdrop-filter: blur(15px);
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  padding: 2rem;
+}
+
+.home-title {
+  font-size: 2rem;
+  color: #ff6f61;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.home-subtitle {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.home-btn-add {
+  background: linear-gradient(to right, #f72585, #7209b7);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 0 0.5rem 0.5rem 0;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.home-btn-add:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(247, 37, 133, 0.6);
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem 0 0 0.5rem;
+  border: none;
+  outline: none;
+  background: #23235b;
+  color: white;
+  font-size: 0.875rem;
+}
+
+input::placeholder {
+  color: #c1c1c1;
+}
+
+/* Scrollbar for horizontal anime list */
+::-webkit-scrollbar {
+  height: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1333;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff6f61;
+  border-radius: 0.25rem;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

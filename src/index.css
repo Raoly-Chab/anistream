@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  background: #111827;
+  color: #f3f4f6;
+  font-family: 'Inter', 'Roboto', 'Segoe UI', Arial, sans-serif;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar stylée */
+::-webkit-scrollbar {
+  width: 8px;
+  background: #f3e8ff;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  border-radius: 8px;
+}
+
+a {
+  transition: color 0.2s;
+}
+
+input, button, textarea, select {
+  font-family: inherit;
+}

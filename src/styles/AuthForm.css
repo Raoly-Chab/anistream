@@ -1,0 +1,117 @@
+/* AuthForm.css */
+
+.auth-form {
+  background: linear-gradient(135deg, #f5f3ff, #fff, #ede9fe);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  max-width: 400px;
+  margin: 3rem auto 0 auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f0abfc;
+}
+
+.auth-form h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #6b21a8;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.auth-avatar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.auth-avatar-container img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 2px solid #c084fc;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 0.5rem;
+}
+
+.auth-avatar-container button {
+  font-size: 0.75rem;
+  color: #3b82f6;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+.auth-input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.75rem;
+  border-radius: 0.75rem;
+  border: 2px solid #e5e7eb;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.auth-input:focus {
+  border-color: #c084fc;
+  box-shadow: 0 0 0 3px rgba(192, 132, 252, 0.2);
+  outline: none;
+}
+
+.auth-error {
+  color: #dc2626;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  animation: pulse 1.2s infinite;
+}
+
+.auth-message {
+  color: #16a34a;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  animation: pulse 1.2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.auth-btn {
+  width: 100%;
+  padding: 0.6rem 0;
+  border-radius: 0.75rem;
+  background: linear-gradient(to right, #c084fc, #8b5cf6);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+}
+
+.auth-btn:hover {
+  transform: scale(1.03);
+}
+
+.auth-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+
+.auth-footer a {
+  color: #6b21a8;
+  text-decoration: underline;
+}
