@@ -24,7 +24,7 @@ Anistream est une application web de gestion et découverte d’animes, dévelop
 
 1. Clone le dépôt :
 	```bash
-	git clone <url-du-repo>
+	git clone https://github.com/Raoly-Chab/anistream.git
 	cd anistream
 	```
 2. Installe les dépendances :
